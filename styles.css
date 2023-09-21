@@ -4,6 +4,22 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
 /* Style the body and fonts */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -97,3 +113,52 @@ footer {
     padding: 10px 0;
     font-size: 0.8rem;
 }
+
+/* Style the accordions */
+.accordion {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-align: left;
+    width: calc(100% - 20px);
+    transition: background-color 0.3s;
+}
+
+.accordion:hover {
+    background-color: #00a8e8;
+}
+
+.active, .accordion:hover {
+    background-color: #ff6b6b; /* Highlight color when active or on hover */
+    transition: background-color 0.3s;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Style the Hobbies section */
+#hobbies {
+    text-align: center;
+}
+
+/* Style the hobbies list container */
+.hobbies-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style individual hobbies */
+.hobby {
+    flex-basis: calc(20% - 20px); /* 20% width with spacing between items */
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ... (other CSS styles) ... */
