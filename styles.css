@@ -6,10 +6,13 @@ body, h1, h2, h3, p, ul, li {
 
 /* Style the header */
 header {
+    margin-top: -185px;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
 }
 
 header h1 {
@@ -22,6 +25,7 @@ header p {
 
 /* Style the body and fonts */
 body {
+    margin-top: 185px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     color: #333;
@@ -30,9 +34,9 @@ body {
 
 /* Style the navigation bar */
 nav {
+    margin-top: 20px;
     background-color: #333;
     color: white;
-    padding: 10px 0;
     text-align: center;
 }
 
@@ -40,10 +44,12 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 nav li {
     margin: 0 20px;
+    text-align: center;
 }
 
 nav a {
@@ -51,10 +57,12 @@ nav a {
     color: white;
     font-weight: bold;
     transition: color 0.3s;
+    text-align: center;
 }
 
 nav a:hover {
     color: #ff6b6b; /* Highlight color on hover */
+    text-align: center;
 }
 
 /* Style sections and headings */
@@ -161,4 +169,21 @@ footer {
     text-align: center;
 }
 
+/* Style the navigation section */
+#navigation {
+    text-align: center;
+}
+
+/* Style the navigation list container */
+.navigation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style individual navigation */
+.navigation {
+    flex-basis: calc(20% - 20px); /* 20% width with spacing between items */
+    text-align: center;
+}
 /* ... (other CSS styles) ... */
