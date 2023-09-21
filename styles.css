@@ -1,42 +1,92 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+/* Style the body and fonts */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Style the navigation bar */
 nav {
     background-color: #333;
     color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: center;
 }
 
 nav li {
-    margin: 0;
-    padding: 0;
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6b6b; /* Highlight color on hover */
 }
 
 /* Style sections and headings */
 section {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style job and project entries */
+.job, .project {
+    margin-bottom: 30px;
+}
+
+.job-title, .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.job-info, .project-info {
+    font-style: italic;
+}
+
+.job-date, .project-date {
+    font-size: 0.8rem;
+}
+
+/* Style details in job and project entries */
+.job-details, .project-details {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.job-details ul, .project-details ul {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+/* Style hobbies and contact sections */
+ul {
+    list-style-type: square;
+    margin-left: 15px;
 }
 
 /* Style the footer */
@@ -45,4 +95,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    font-size: 0.8rem;
 }
